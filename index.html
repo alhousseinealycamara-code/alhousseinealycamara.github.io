@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to bottom, #0f172a, #1e3a8a);
+      color: #f1f5f9;
+    }
+
+    header {
+      background: rgba(0,0,0,0.25);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(8px);
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 22px;
+      background: #3b82f6;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+      transform: translateY(-3px);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #1e40af;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+      transition: transform 0.25s, box-shadow 0.25s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 22px rgba(0,0,0,0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.25);
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media(max-width:600px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mon Site</h1>
+    <nav>
+   <ul class="navbar">
+      <li><a href="index.html"> Accueil</a></li>
+      <li><a href="apropos.html"> À propos </a></li>
+      <li><a href="service.html"> Services</a></li>
+      <li><a href="design.html"> Design </a></li>
+      <li><a href="contact.html" class="active"> Contact </a></li>
+      <li><a href="galerie.html" class="active"> Galérie </a></li>
+      <li><a href="progression.html" class="active"> Competence </a></li>
+    </ul>
+     
+  </header>
+
+  <section class="hero">
+    <h2>Bienvenue dans mon univers informatique</h2>
+    <p>
+      Explorez mes projets, mes compétences et ma passion pour la technologie.
+      Cette page d'accueil reflète mon engagement à apprendre, créer et
+      innover dans le monde du numérique.
+    </p>
+    <a href="#" class="btn">Découvrir</a>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>Mes compétences</h3>
+      <p>Programmation, logique, conception web et résolution de problèmes.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mes projets</h3>
+      <p>Applications, sites web et expérimentations techniques variées.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mon objectif</h3>
+      <p>Continuer à apprendre et contribuer à construire le futur numérique.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 — Page d'accueil personnelle
+  </footer>
+</body>
+</html>
+
+</body>
+</html>
